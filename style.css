@@ -37,6 +37,10 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+  
+.header nav a:hover {
+    background-color:darkgray;
+  }
 
 a {
     color:#ffffff;
@@ -59,4 +63,100 @@ p {
 }
 /* end hero */
 
+/* content section */
+.content h2 {
+    text-align: left;
 
+}
+
+.content {
+    display:flexbox;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.content-attributes {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(199, 219, 226);
+    color:black;
+}
+
+p {
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.work-attributes {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 1000px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(199, 219, 226);
+    color:black;
+}
+
+.project {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card1 {
+    padding: 5px;
+    flex: 0 0 300px;
+    margin: 10px;
+    text-align: center;
+  }
+
+.card1 img {
+      width: 1000px;
+      height: 500px;
+  }
+
+.card1 a:hover {
+    background-color:darkgray;
+  }
+
+.card1 header {
+    font-weight: bold;
+}
+  
+.card {
+    display:inline-block;
+    text-align: center;
+    padding: 5px;
+    flex: 0 0 300px;
+    margin: 10px;
+  }
+
+.card img {
+    width: 500px;
+    height: 250px;
+}
+
+.card header {
+    font-weight: bold;
+}
+
+.footer{
+    padding: 20px;
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#ffffff
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+        flex-direction: column;
+    }
+}

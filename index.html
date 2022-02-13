@@ -3,6 +3,7 @@
 
 <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./style.css">
         <title>Jason Talbert - Web Developer</title>
 </head>
@@ -14,13 +15,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="about-me">About Me</a>
+                    <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="work">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -29,8 +30,56 @@
 
     <section class="hero"></section>
 
+    <!-- content section -->
+    <main class="content">
+        <section id="about-me" class="content-attributes">
+           <!-- <img src="" class="float-left" alt=""> -->
+           <h2>About me</h2>
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </p>
+        </section>
 
-    
+        <section id="work" class="work-attributes">
+            <!-- <img src="" class="float-left" alt=""> -->
+            <!-- flex box? show work examples here -->
+            <h2>Work</h2>
+                <section class="card1">
+                  <header>Run Buddy</header>
+                  <a href="https://jtal3.github.io/run-buddy/">
+                    <img src="images/runbuddy-overlay.jpg"  alt="Run Buddy Portfolio Piece">
+                    </a>
+                </section>
+        <!-- placeholder images and projects -->
+                <section class="card">
+                  <header>Plentea Horticulture</header>
+                  <img src="./images/img1.jpg" alt="plant" />
+                </section>
+                <section class="card">
+                  <header>Madeup Shoe Store</header>
+                  <img src="./images/img2.jpg" alt="shoe" />
+                </section>
+                <section class="card">
+                  <header>Click Click Camera</header>
+                  <img src="./images/img3.jpg" alt="camera" />
+                </section>
+        </section>
+        <!-- end placeholder images and projects -->
+
+        <section id="contact" class="content-attributes">
+            <h2>Contact</h2>
+            <p><b>Email:</b> jason.talbert.jt@gmail.com <b>Github:</b><a href="https://github.com/JTAL3">JTAL3</a> <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/jasontalbert" />Jason Talbert</p>
+        </section>
+
+    </main>
+    <!-- end of content section -->
+
+    <footer class="footer">
+        <p>&copy; 2022 Jason Talbert</p>
+    </footer>
+
+
 </body>
 
 
