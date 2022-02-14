@@ -6,11 +6,18 @@
 
 body {
     background-color:dimgrey;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
 }
 
 /* start header */
 .header {
-    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
     font-family:Arial, Helvetica, sans-serif;
     background-color:cadetblue;
     color: #ffffff;
@@ -18,28 +25,31 @@ body {
 
 .header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 40px;
+    margin-left: 40px;
 }
 
 .header nav {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: 40px;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
 .header nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
 }
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 45px;
 }
   
 .header nav a:hover {
-    background-color:darkgray;
+    color:darkgray;
   }
 
 a {
@@ -54,6 +64,7 @@ p {
 
 /* start hero */
 .hero {
+    display: flex;
     height: 500px;
     width: 100%;
     margin-bottom: 25px;
@@ -64,15 +75,15 @@ p {
 /* end hero */
 
 /* content section */
-.content h2 {
-    text-align: left;
-
-}
-
 .content {
     display:flexbox;
     flex-wrap: wrap;
-    margin-left: 20px;
+}
+
+.content h2 {
+    text-align: left;
+    color:cadetblue;
+    font-size: 25px;
 }
 
 .content-attributes {
@@ -86,24 +97,17 @@ p {
 
 p {
     text-align: center;
-    justify-content: space-evenly;
     padding: 50px;
 }
 
 .work-attributes {
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 30px;
     height: 1000px;
     font-family:Arial, Helvetica, sans-serif;
     background-color:rgb(199, 219, 226);
     color:black;
-}
-
-.project {
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
 .card1 {
@@ -143,20 +147,50 @@ p {
     font-weight: bold;
 }
 
-.footer{
-    padding: 20px;
-    clear: both;
-    font-family: Arial, Helvetica, sans-serif;
+.contact-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(199, 219, 226);
+    color:black;
+}
+
+.contact-me p {
     text-align: center;
+    padding: 50px;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+
+.table a:hover {
+    color:darkgray;
+  }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
     color:#ffffff
 }
 
 
-
-
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-        flex-direction: column;
+@media screen and (max-width: 800px) {
+    body {
+        align-content: center;
+        background-color:cadetblue;
     }
+    
 }
