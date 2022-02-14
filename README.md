@@ -1,3 +1,5 @@
+<b>Professional Portfolio</b>
+<br />
 This project is aimed at being my personal device and guide to employment. It will continuously be updated as I continue to grow within the realm of web development.
 Feel free to take a look and provide constructive criticism. I'm open to all new ideas.
 
